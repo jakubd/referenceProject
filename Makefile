@@ -7,12 +7,13 @@ GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
 GOTEST=$(GOCMD) test
 GOGET=$(GOCMD) get
-BINARY_NAME=referenceProject.out
 GETDEPS=$(GOCMD) mod download
+BINARY_NAME=referenceProject.out
 
 all: deps test build
 build:
 		$(GOBUILD) -o $(BINARY_NAME) -v
+		@echo "build done run with: ./$(BINARY_NAME)"
 test:
 		$(GOTEST) -v ./...
 clean:
