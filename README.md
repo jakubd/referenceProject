@@ -10,6 +10,6 @@ Contains the following:
 * basic go.mod
 * logging via logsrus
 * directory template for additional packages
-* testing
+* testing (with asserts by testify lib)
 * .gitignore
 * makefile
