@@ -6,6 +6,6 @@ import (
 )
 
 func TestAddNumbers(t *testing.T) {
-	res := AddNumbers(1,1)
+	res := AddNumbers(1, 1)
 	assert.Equal(t, res, 2)
 }
