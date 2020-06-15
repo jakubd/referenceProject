@@ -12,4 +12,5 @@ Contains the following:
 * directory template for additional packages
 * testing (with asserts by testify lib)
 * .gitignore
+* github actions running tests against current active golang versions and on mac/linux. 
 * makefile
