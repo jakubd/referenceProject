@@ -1,4 +1,4 @@
-package common
+package referenceProject
 
 import (
 	"github.com/stretchr/testify/assert"

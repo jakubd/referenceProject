@@ -12,7 +12,7 @@ BINARY_NAME=referenceProject.out
 
 all: deps test build
 build:
-		$(GOBUILD) -o $(BINARY_NAME) -v
+		$(GOBUILD) -o $(BINARY_NAME) -v ./mainworkflow
 		@echo "build done run with: ./$(BINARY_NAME)"
 test:
 		$(GOTEST) -v ./...
@@ -20,7 +20,7 @@ clean:
 		$(GOCLEAN)
 		rm -f $(BINARY_NAME)
 run:
-		$(GOBUILD) -o $(BINARY_NAME) -v
+		$(GOBUILD) -o $(BINARY_NAME) -v ./mainworkflow
 		./$(BINARY_NAME)
 deps:
 		$(GOGETGETDEPS)
