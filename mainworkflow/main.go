@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/jakubd/referenceProject/common"
+	ref "github.com/jakubd/referenceProject"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -21,7 +21,7 @@ func main() {
 
 	a := 1
 	b := 2
-	fmt.Printf("%d + %d = %d\n", a, b, common.AddNumbers(a, b))
+	fmt.Printf("%d + %d = %d\n", a, b, ref.AddNumbers(a, b))
 
 	log.Info("ended main func")
 }
